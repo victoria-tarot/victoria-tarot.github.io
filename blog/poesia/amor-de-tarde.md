@@ -1,0 +1,28 @@
+---
+layout: blog.njk
+title: Amor de tarde
+---
+Es una lástima que no estés conmigo
+cuando miro el reloj y son las cuatro
+y acabo la planilla y pienso diez minutos
+y estiro las piernas como todas las tardes
+y hago así con los hombros para aflojar la espalda
+y me doblo los dedos y les saco mentiras.
+
+Es una lástima que no estés conmigo
+cuando miro el reloj y son las cinco
+y soy una manija que calcula intereses
+o dos manos que saltan sobre cuarenta teclas
+o un oído que escucha como ladra el teléfono
+o un tipo que hace números y les saca verdades.
+
+Es una lástima que no estés conmigo
+cuando miro el reloj y son las seis.
+Podrías acercarte de sorpresa
+y decirme "¿Qué tal?" y quedaríamos
+yo con la mancha roja de tus labios
+tú con el tizne azul de mi carbónico.
+
+Cartas sin destinatario... Cada día Te escribo una nueva y no tengo el valor de publicarla... Algún día algún día.....
+
+hoy te dejo algo de Benedetti, Hermoso ¿no?
