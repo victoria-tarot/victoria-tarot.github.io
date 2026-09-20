@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victoria - Tarot Evolutivo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <title>Victoria - Tarot Evolutivo y Bitácora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&family=Dancing+Script:wght@600&family=Lora:ital,wght@0,400;1,400&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -107,6 +107,19 @@
         .btn-back { background: transparent; border: 1px solid white; color: white; padding: 10px 25px; border-radius: 50px; margin-bottom: 20px; }
         .btn-back:hover { background: white; color: black; }
 
+        /* --- ESTILOS DEL BLOG (INYECCIÓN) --- */
+        .blog-container {
+            max-width: 750px; margin: 0 auto; padding: 2rem 1rem;
+            font-family: 'Lora', 'Merriweather', serif; color: #e0e0e0; line-height: 1.8;
+        }
+        .poema-contenido {
+            white-space: pre-wrap; font-size: 1.1rem; margin-bottom: 2rem; font-style: italic;
+        }
+        .ficha-tecnica {
+            background: rgba(255, 255, 255, 0.05); padding: 1rem; border-left: 3px solid #7a6e9a;
+            font-size: 0.9rem; margin-bottom: 2rem;
+        }
+
         /* --- MÓVIL --- */
         @media (max-width: 768px) {
             .desktop-only { display: none; } 
@@ -152,6 +165,12 @@
             </div>
 
             <div class="right-grid">
+                <!-- NAVEGACIÓN: BLOG (PC) -->
+                <div class="menu-card" onclick="window.location.href='/blog/index.html'">
+                    <img src="86008.png" alt="Blog" style="filter: hue-rotate(270deg) sepia(0.2);"> 
+                    <h3 class="tr-blog">Bitácora Literaria</h3>
+                </div>
+
                 <a href="https://calendly.com/victoria-tarot/30min" target="_blank" class="menu-card">
                     <img src="86003.png" alt="Agenda">
                     <h3 class="tr-agenda">Agenda tu cita</h3>
@@ -182,6 +201,14 @@
         <div id="mobile-home" class="mobile-only mobile-section">
             <h1 class="main-title tr-title">TAROT EVOLUTIVO</h1>
             <div class="mobile-menu-list">
+                <!-- NAVEGACIÓN: BLOG (MÓVIL) -->
+                <div class="menu-item" onclick="window.location.href='/blog/index.html'">
+                    <img src="86008.png" class="menu-icon" style="filter: hue-rotate(270deg) sepia(0.2);">
+                    <div class="menu-text">
+                        <h3 class="tr-blog">Bitácora Literaria</h3>
+                        <p class="tr-blog-desc">Poesía y Reseñas.</p>
+                    </div>
+                </div>
                 <div class="menu-item" onclick="showSection('desktop-sobre-mi')">
                     <img src="86008.png" class="menu-icon">
                     <div class="menu-text"><h3 class="tr-about">Sobre Mí</h3><p class="tr-about-desc">Conoce mi historia.</p></div>
@@ -267,6 +294,7 @@
                 about: "Sobre Mí", aboutDesc: "Conoce mi historia.",
                 agenda: "Agenda tu cita", agendaDesc: "Reserva aquí.",
                 rates: "Tarifas", ratesDesc: "Opciones y precios.",
+                blog: "Bitácora Literaria", blogDesc: "Poesía y Reseñas.",
                 oracle: "Mensaje del día", oracleDesc: "Un consejo del universo.",
                 amulets: "Amuletos",
                 testi: "Testimonios",
@@ -290,6 +318,7 @@
                 about: "About Me", aboutDesc: "My story & method.",
                 agenda: "Book Now", agendaDesc: "Reserve your reading.",
                 rates: "Rates", ratesDesc: "Prices & Options.",
+                blog: "Literary Journal", blogDesc: "Poetry & Reviews.",
                 oracle: "Daily Message", oracleDesc: "Advice from the universe.",
                 amulets: "Amulets",
                 testi: "Testimonials",
@@ -313,6 +342,7 @@
                 about: "À Propos", aboutDesc: "Mon histoire.",
                 agenda: "Prendre RDV", agendaDesc: "Réservez ici.",
                 rates: "Tarifs", ratesDesc: "Options et prix.",
+                blog: "Journal Littéraire", blogDesc: "Poésie et Critiques.",
                 oracle: "Message du jour", oracleDesc: "Un conseil de l'univers.",
                 amulets: "Amulettes",
                 testi: "Témoignages",
@@ -352,6 +382,7 @@
             updateText('.tr-about', t.about); updateText('.tr-about-desc', t.aboutDesc);
             updateText('.tr-agenda', t.agenda); updateText('.tr-agenda-desc', t.agendaDesc);
             updateText('.tr-rates', t.rates); updateText('.tr-rates-desc', t.ratesDesc);
+            updateText('.tr-blog', t.blog); updateText('.tr-blog-desc', t.blogDesc); 
             updateText('.tr-oracle', t.oracle); updateText('.tr-oracle-desc', t.oracleDesc);
             updateText('.tr-faq', t.faq); updateText('.tr-faq-desc', t.faqDesc);
             updateText('.tr-amulets', t.amulets);
